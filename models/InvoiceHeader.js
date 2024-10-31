@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-// const { Schema } = mongoose;
 
 const invoiceHeaderSchema = new mongoose.Schema({
     Id: {
@@ -20,4 +19,4 @@ const invoiceHeaderSchema = new mongoose.Schema({
 });
 const InvoiceHeader = mongoose.model('InvoiceHeader', invoiceHeaderSchema);
 
-module.exports = InvoiceHeader;
+module.exports = {InvoiceHeader};

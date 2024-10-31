@@ -16,4 +16,4 @@ const invoiceBillSundrySchema = new Schema({
 });
 
 InvoiceBillSundry = model('invoice_billsundry', invoiceBillSundrySchema)
-module.exports = InvoiceBillSundry;
+module.exports = {InvoiceBillSundry};

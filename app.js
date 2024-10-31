@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const rinvoice = require('./routes/rinvoice.js');
+const rinvoice = require('./routes/route.js');
 
 const app = express();
 
@@ -9,7 +9,7 @@ const PORT = 5001;
 
 app.use(bodyParser.json());
 
-app.use('/test', rinvoice);
+app.use('/', rinvoice);
 
 app.get('/', (req, res) => {
     res.send('hello');
